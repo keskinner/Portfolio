@@ -1,0 +1,101 @@
+            * {
+              box-sizing: border-box;
+            }
+  
+            body {
+              font-family: "Open Sans",
+              sans-serif; 
+              font-size: 12px;
+              color: #444;
+              text-align: center;
+              line-height: 1.5;
+            }
+
+    @media screen and (max-width: 320px) {
+            nav {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              z-index: 10;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+            }
+
+            main {
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 37px;
+              margin-bottom: 37px;
+              width: 200px;
+              border-left: gray;
+              border-right: gray;
+              padding: 15px;
+            }
+        }
+      
+    @media screen and (max-width: 700px) {
+            nav {
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              z-index: 10;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+            } 
+
+            main {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 37px;
+                margin-bottom: 10px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            footer {
+                bottom: 0;
+                width: 100%;
+            }
+        }
+            
+    @media screen and (min-width: 701px) {   
+            main {
+                position: fixed;
+                top: 250px;
+                left: 75px;
+                height: 250px;
+                width: 57%;
+                overflow: auto;
+                word-wrap: break-word;
+                display: flex;
+                flex-direction: column;
+            }
+              
+            nav,
+            footer {
+                padding: 1% 0;
+                background-color: #aaa;
+                position: fixed;
+            }
+              
+            nav {
+                width: 20%;
+                right: 75px;
+                top: 250px;
+                height: 250px;
+                border-left: 5px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            
+            footer {
+                  bottom: 0;
+                  width: 100%;
+            }
+        }
+      

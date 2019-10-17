@@ -92,6 +92,10 @@
                 flex-direction: column;
                 justify-content: space-evenly;
             }
+
+            h3 {
+                padding-top: 100px;
+              }
             
             footer {
                   bottom: 0;

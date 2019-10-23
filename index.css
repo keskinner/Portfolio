@@ -47,6 +47,12 @@
       padding-right: 20px;
   }
 
+  img.screenShot {
+    height: auto;
+    width: 65%;
+    border: 5px solid rgb(244, 68, 46);
+  }
+
   span.label {
     color: rgb(244, 68, 46);
   }
@@ -129,12 +135,6 @@
       height: 400px;
     }
 
-    img.screenShot {
-        height: auto;
-        width: 65%;
-        border: 5px solid rgb(244, 68, 46);
-      }
-
     .imgPic {
       height: 70px;
       width: 70px;
@@ -159,12 +159,6 @@
   .info {
       margin-left: 150px;
       margin-right: 150px;
-  }
-
-  img.screenShot {
-    height: auto;
-    width: 65%;
-    border: 5px solid rgb(244, 68, 46);
   }
 
   .imgPic {

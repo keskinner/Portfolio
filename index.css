@@ -1,105 +1,204 @@
-            * {
-              box-sizing: border-box;
-            }
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+    background-color: rgb(242, 243, 174);
+  }
+
+  nav,
+  footer {
+      padding: 1% 0;
+      position: fixed;
+      font-family: monospace;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+    text-decoration-line: underline;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: rgb(244, 68, 46);
+    margin-top: 125px;
+  }
+
+  h2 {
+      margin-top: 100px;
+      font-size: 30px;
+      margin-bottom: 30px;
+  }
+
+  h5 {
+      font-size: 36px;
+      color: rgb(244, 68, 46);
+      margin-top: 25px;
+  }
+
+  p {
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  span.label {
+    color: rgb(244, 68, 46);
+  }
+
+  ul {
+      list-style-type: none;
+  }
+
+  .list {
+      text-align: left;
+  }
+
+  .name {
+      color: rgb(244, 68, 46);
+  }
+
+  div.socialLink {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 100px;
+  }
+
+  footer {
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: rgb(244, 68, 46);
+  }
+
+@media screen and (max-width: 479px) {
+
+  section {
+    border-right: 1px solid rgb(242, 68, 46);
+    border-left: 1px solid rgb(244, 68, 46);
+    padding: 5px;
+  }
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    overflow: auto;
+    height: 450px;
+    background-color: rgb(242, 243, 174);
+  }
+}
+
+@media screen and (max-width: 880px) {
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    } 
   
-            body {
-              font-family: "Open Sans",
-              sans-serif; 
-              font-size: 12px;
-              color: #444;
-              text-align: center;
-              line-height: 1.5;
-            }
+    .navbar {
+      border: none;
+      padding: 15px 32px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      font-family: monospace;
+      background-color: rgb(242, 243, 174);
+    }
 
-    @media screen and (max-width: 320px) {
-            nav {
-              position: fixed;
-              top: 0;
-              left: 0;
-              right: 0;
-              z-index: 10;
-              display: flex;
-              flex-direction: row;
-              justify-content: space-evenly;
-            }
+    main {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 70px;
+      margin-bottom: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      overflow: auto;
+      height: 400px;
+    }
 
-            main {
-              margin-left: auto;
-              margin-right: auto;
-              margin-top: 37px;
-              margin-bottom: 37px;
-              width: 200px;
-              border-left: gray;
-              border-right: gray;
-              padding: 15px;
-            }
-        }
-      
-    @media screen and (max-width: 700px) {
-            nav {
-              position: fixed;
-              top: 0;
-              left: 0;
-              right: 0;
-              z-index: 10;
-              display: flex;
-              flex-direction: row;
-              justify-content: space-evenly;
-            } 
+    img.screenShot {
+        height: auto;
+        width: 65%;
+        border: 5px solid rgb(244, 68, 46);
+      }
 
-            main {
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 37px;
-                margin-bottom: 10px;
-                padding-left: 50px;
-                padding-right: 50px;
-            }
+    .imgPic {
+      height: 70px;
+      width: 70px;
+    }
+}
+  
+@media screen and (min-width: 881px) {   
+  main {
+      position: fixed;
+      top: 150px;
+      left: 75px;
+      height: 450px;
+      width: 65%;
+      overflow: auto;
+      word-wrap: break-word;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      background-color: rgb(242, 243, 174);
+  }
 
-            footer {
-                bottom: 0;
-                width: 100%;
-            }
-        }
-            
-    @media screen and (min-width: 701px) {   
-            main {
-                position: fixed;
-                top: 250px;
-                left: 75px;
-                height: 250px;
-                width: 57%;
-                overflow: auto;
-                word-wrap: break-word;
-                display: flex;
-                flex-direction: column;
-            }
-              
-            nav,
-            footer {
-                padding: 1% 0;
-                background-color: #aaa;
-                position: fixed;
-            }
-              
-            nav {
-                width: 20%;
-                right: 75px;
-                top: 250px;
-                height: 250px;
-                border-left: 5px solid black;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-            }
+  .info {
+      margin-left: 150px;
+      margin-right: 150px;
+  }
 
-            h3 {
-                padding-top: 100px;
-              }
-            
-            footer {
-                  bottom: 0;
-                  width: 100%;
-            }
-        }
+  img.screenShot {
+    height: auto;
+    width: 65%;
+    border: 5px solid rgb(244, 68, 46);
+  }
+
+  .imgPic {
+      height: 70px;
+      width: 70px;
+  }
+
+  nav {
+      width: 15%;
+      right: 75px;
+      top: 150px;
+      height: 450px;
+      border-left: 2px solid rgb(244, 68, 46);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      color: rgb(252, 158, 79);
+  }
+
+  .navbar {
+      border: none;
+      padding: 15px 32px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      font-family: monospace;
+      margin-left: 10px;
+      color: rgb(244, 68, 46);
+      background-color: rgb(242, 243, 174);
+  }
+
+  h3 {
+      padding-top: 100px;
+      font-size: 20px;
+    }
+}
       

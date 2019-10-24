@@ -116,6 +116,7 @@
   
     .navbar {
       border: none;
+      outline: none;
       padding: 15px 32px;
       text-decoration: none;
       display: inline-block;
@@ -130,8 +131,6 @@
       margin-right: auto;
       margin-top: 70px;
       margin-bottom: 10px;
-      padding-left: 50px;
-      padding-right: 50px;
       overflow: auto;
       height: 400px;
     }
@@ -189,6 +188,7 @@
       margin-left: 10px;
       color: rgb(244, 68, 46);
       background-color: rgb(242, 243, 174);
+      outline: none;
   }
 
   h3 {

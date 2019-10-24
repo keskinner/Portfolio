@@ -1,6 +1,5 @@
 function showBanner() {
     //makes the landing page for page
-    event.preventDefault();
     $('.aboutInfo').hide();
     $('.projectsInfo').hide();
     $('.contactInfo').hide();
@@ -13,7 +12,7 @@ function showBanner() {
       event.preventDefault();
       $('.banner').hide();
       $('.contactInfo').hide();
-      $('projectsInfo').hide();
+      $('.projectsInfo').hide();
       $('.aboutInfo').show();
       console.log('about ran');
     })

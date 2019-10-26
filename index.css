@@ -65,6 +65,29 @@
       text-align: left;
   }
 
+  .link {
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: monospace;
+    background-color:rgb(242, 243, 174);
+    color: rgb(244, 68, 46);
+  }
+
+  button {
+    border-color: rgb(244, 68, 46);
+    background-color: rgb(242, 243, 174);
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   .name {
       color: rgb(244, 68, 46);
   }
@@ -85,20 +108,19 @@
 
 @media screen and (max-width: 479px) {
 
-  section {
+  body {
     border-right: 1px solid rgb(242, 68, 46);
     border-left: 1px solid rgb(244, 68, 46);
     padding: 5px;
   }
 
+  .navbar {
+    font-size: 14px;
+  }
+
   main {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 37px;
     margin-bottom: 37px;
-    overflow: auto;
-    height: 450px;
-    background-color: rgb(242, 243, 174);
   }
 }
 
@@ -117,7 +139,7 @@
     .navbar {
       border: none;
       outline: none;
-      padding: 15px 32px;
+      padding: 5px 5px;
       text-decoration: none;
       display: inline-block;
       font-size: 20px;
@@ -130,9 +152,22 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 70px;
-      margin-bottom: 10px;
-      overflow: auto;
-      height: 400px;
+      margin-bottom: 60px;
+      height: auto;
+    }
+
+    footer {
+      background-color: rgb(242, 243, 174);
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+      color: rgb(244, 68, 46);
+      height: 40px;
+      display: flex;
+      left: 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
 
     .imgPic {

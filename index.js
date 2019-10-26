@@ -41,6 +41,18 @@ function showBanner() {
       console.log('contact ran');
     })
   }
+
+  function showHome () {
+    //shows home page info when home is clicked
+    $('button.navbar.home').on('click', function (event) {
+      event.preventDefault();
+      $('.aboutInfo').hide();
+      $('.projectsInfo').hide();
+      $('.contactInfo').hide();
+      $('.banner').show();
+      console.log('home ran');
+    })
+  }
   
   function makePort() {
       //makes the portfolio
@@ -48,6 +60,7 @@ function showBanner() {
     showAbout();
     showProjects();
     showContact();
+    showHome();
   }
   
   $(makePort);
